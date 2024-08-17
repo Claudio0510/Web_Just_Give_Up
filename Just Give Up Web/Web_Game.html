@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<head>
+    <title>JUST , GIVE UP </title>
+    
+
+
+
+    
+    <style>
+        .title-with-bar {
+            display: inline-block;
+            position: relative;
+        }
+
+        .title-with-bar::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 5px;
+            background-color: yellow;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+        }
+
+        /*To putt the image on the top, to make the header of the web*/
+        header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px; 
+        background-color: #fff; 
+        z-index: 1000; 
+
+
+        /*To make the image header on the right size*/
+        header img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+
+        /*To make the images move */
+        body {
+            height: 2000px; /* Asegura suficiente espacio para el scroll */
+            margin: 0;
+        }
+        .fixed-image {
+            position: fixed;
+            right: 0;
+            top: 0;
+            transition: top 0.3s ease;
+        }
+        .scrolled {
+            position: absolute;
+            top: 100px; /* Cambia la posición según sea necesario */
+            right: 0;
+        }
+
+        }
+
+
+
+
+    
+    </style>
+
+    
+
+</head>
+
+<!--To putt the header on the top of the web and make on the center of the web -->
+<header>
+    <div style="text-align: center;">
+    <img src="C:\Users\claud\Desktop\Web_Game\Tittle.png" alt="Cabecera">
+    </div>
+</header>
+
+
+
+
+</body>
+<body>
+    
+
+
+
+<!--The line of style is used to center the images on the center-->>
+<div style="text-align: center;">
+    <img src="C:\Users\claud\Desktop\Web_Game\Tittle.png" alt="Tittle One">
+    <img src="C:\Users\claud\Desktop\Web_Game\Tittle.png" alt="Tittle Two">
+    <img src="C:\Users\claud\Desktop\Web_Game\Tittle.png" alt="Tittle Three">
+    <img src="C:\Users\claud\Desktop\Web_Game\Tittle.png" alt="Tittle Four">
+    <img src="C:\Users\claud\Desktop\Web_Game\Tittle.png" alt="Tittle Five">
+    <img src="C:\Users\claud\Desktop\Web_Game\Tittle.png" alt="Tittle Six">
+</div>
+
+
+        <!--SCript to move the images-->>
+        <script>
+            window.addEventListener('scroll', function() {
+                var image = document.getElementById('myImage');
+                if (window.scrollY > 100) { /* Cambia el valor según el scroll deseado */
+                    image.classList.add('scrolled');
+                } else {
+                    image.classList.remove('scrolled');
+                }
+            });
+        </script>
+
+
+
+
+
+
+    <div style="text-align: center;">
+        <h1> Hi everybody! </h1>
+        <h1>Here , there is a little game </h1>
+    </div>
+
+    <!--Blankets-->>
+    <br>
+    <br>
+    <h1>The name of this game is Just, Give Up</h1>
+    <h1>The main idea of the game is to create a plataformer game , but on this game there is no option to jump the player by itself. To jump the only option  is use limited points that exist already on the map</h1>
+    <!--Blankets-->>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <!--This is to putt the yellow bar-->>
+    <h2 class="title-with-bar"> The points that you can use to jump are like this</h2>
+
+    <!--Blankets-->>
+    <br>
+    <br>
+    
+
+    <div style="text-align: center;">
+    <img src="C:\Users\claud\Desktop\Web_Game\Point_To_Jump.png" alt="Point Jump Screen Shots"class="fixed-image" id="myImage">>
+    </div>
+
+    <!--This is to make the tittle upper and blacked-->>
+    <h2 class="title-with-bar">Screnshots of the game</h2>
+        <div style="text-align: center;">
+        <img src="C:\Users\claud\Desktop\Web_Game\ScreenShoot_1.png" alt="ScreenShot 1">
+            <!--Blankets-->>
+        <br>
+        <br>
+        <img src="C:\Users\claud\Desktop\Web_Game\Screen_Shoot_2.png" alt="ScreenShot 2">
+            <!--Blankets-->>
+        <br>
+        <br>
+        <img src="C:\Users\claud\Desktop\Web_Game\Screen_Shoot_3.png" alt="ScreenShot 3">
+            <!--Blankets-->>
+        <br>
+        <br>
+        <img src="C:\Users\claud\Desktop\Web_Game\Screen_Shoot_4.png" alt="ScreenShot 4">
+            <!--Blankets-->>
+        <br>
+        <br>
+        <img src="C:\Users\claud\Desktop\Web_Game\Screen_Shoot_5.png" alt="ScreenShot 5">
+            <!--Blankets-->>
+        <br>
+        <br>
+        <img src="C:\Users\claud\Desktop\Web_Game\Screen_Shoot_6.png" alt="ScreenShot 6">
+        </div>
+
+    <!--Blankets-->>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--THis is the image at the end , used as background-->>
+    <img src="C:\Users\claud\Desktop\Web_Game\Black_Background.jpg" alt="ScreenShot 6" style="width: 100%; height: 1;">
+
+
+
+
+</body>
+
+
+</html>
